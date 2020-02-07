@@ -17,14 +17,19 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Movie',
-      url: '/list',
-      icon: 'videocam'
-    },
-    {
       title: 'Profile',
       url: '/profile',
       icon: 'contact'
+    },
+    {
+    title: 'Categories',
+    children: [
+        {
+          title: 'Movie',
+          url: '/list',
+          icon: 'videocam'
+        },
+      ]
     }
   ];
 
